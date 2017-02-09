@@ -1,0 +1,23 @@
+<html>
+<head>
+
+</head>
+<body>
+<?php
+	$host = "localhost";
+	$user = "root";
+	$password = "admin";
+	$database = "CMSC435";
+	$table = "Applications";
+	$db = connectToDB($host, $user, $password, $database);
+	$test_String;
+	if ($db) {
+		$test_String = "YESSS";
+	} else {
+		$test_String = "NO";
+	}
+	echo $test_String;
+?> 
+</body>
+
+</html>
